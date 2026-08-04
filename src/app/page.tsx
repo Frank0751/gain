@@ -42,12 +42,12 @@ export default function Home() {
           </div>
 
           <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-32 sm:px-6 lg:px-8">
-            <div className="max-w-3xl">
+            <div className="flex flex-col items-center text-center">
               <motion.div
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="mb-6 flex items-center gap-4"
+                className="mb-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
               >
                 <div className="relative size-16 overflow-hidden rounded-full ring-4 ring-white/30 sm:size-20">
                   <img
@@ -56,7 +56,7 @@ export default function Home() {
                     className="absolute inset-0 h-full w-full object-cover"
                   />
                 </div>
-                <div>
+                <div className="text-center sm:text-left">
                   <h1 className="font-display text-4xl font-extrabold leading-tight text-white sm:text-5xl md:text-6xl">
                     GAIN
                   </h1>
@@ -70,7 +70,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.25 }}
-                className="font-display text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl"
+                className="max-w-4xl font-display text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl"
               >
                 Leading the front for a sustainable and green Ghana.
               </motion.h2>
@@ -88,7 +88,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.55 }}
-                className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center"
+                className="mt-9 flex flex-col items-center gap-3 sm:flex-row sm:justify-center"
               >
                 <Button
                   asChild
@@ -118,7 +118,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.7 }}
-                className="mt-8 flex items-center gap-3"
+                className="mt-8 flex items-center justify-center gap-3"
               >
                 <span className="text-sm font-medium text-white/70">Follow us:</span>
                 <div className="flex gap-2">

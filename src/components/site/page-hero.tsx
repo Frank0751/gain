@@ -26,50 +26,52 @@ export function PageHero({ title, subtitle, image, breadcrumbs }: PageHeroProps)
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-        {breadcrumbs && breadcrumbs.length > 0 && (
-          <motion.nav
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            className="mb-4 flex items-center gap-1.5 text-sm text-white/70"
-            aria-label="Breadcrumb"
-          >
-            {breadcrumbs.map((crumb, i) => (
-              <React.Fragment key={i}>
-                {crumb.href ? (
-                  <Link href={crumb.href} className="hover:text-white transition-colors">
-                    {crumb.label}
-                  </Link>
-                ) : (
-                  <span className="text-white/90">{crumb.label}</span>
-                )}
-                {i < breadcrumbs.length - 1 && (
-                  <ChevronRight className="size-3.5 text-white/50" />
-                )}
-              </React.Fragment>
-            ))}
-          </motion.nav>
-        )}
+        <div className="flex flex-col items-center text-center">
+          {breadcrumbs && breadcrumbs.length > 0 && (
+            <motion.nav
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+              className="mb-4 flex items-center justify-center gap-1.5 text-sm text-white/70"
+              aria-label="Breadcrumb"
+            >
+              {breadcrumbs.map((crumb, i) => (
+                <React.Fragment key={i}>
+                  {crumb.href ? (
+                    <Link href={crumb.href} className="hover:text-white transition-colors">
+                      {crumb.label}
+                    </Link>
+                  ) : (
+                    <span className="text-white/90">{crumb.label}</span>
+                  )}
+                  {i < breadcrumbs.length - 1 && (
+                    <ChevronRight className="size-3.5 text-white/50" />
+                  )}
+                </React.Fragment>
+              ))}
+            </motion.nav>
+          )}
 
-        <motion.h1
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="max-w-3xl font-display text-4xl font-extrabold leading-tight text-white sm:text-5xl md:text-6xl"
-        >
-          {title}
-        </motion.h1>
-
-        {subtitle && (
-          <motion.p
+          <motion.h1
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.25 }}
-            className="mt-5 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg"
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="w-full font-display text-5xl font-extrabold leading-tight text-white sm:text-6xl md:text-7xl lg:text-8xl"
           >
-            {subtitle}
-          </motion.p>
-        )}
+            {title}
+          </motion.h1>
+
+          {subtitle && (
+            <motion.p
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.25 }}
+              className="mt-6 max-w-3xl text-base leading-relaxed text-white/85 sm:text-lg md:text-xl"
+            >
+              {subtitle}
+            </motion.p>
+          )}
+        </div>
       </div>
     </section>
   );
