@@ -266,10 +266,18 @@ export function Footer() {
               Sitemap
             </Link>
           </div>
-          <p className="flex items-center gap-1.5">
+          <p className="flex flex-wrap items-center justify-center gap-x-1.5 text-center">
             Built with
             <Leaf className="size-3.5 text-primary" />
-            for a greener Ghana.
+            for a greener Ghana by
+            <a
+              href="https://koombei.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-foreground transition-colors hover:text-primary"
+            >
+              KoomBei (koombei.com)
+            </a>
           </p>
         </motion.div>
       </div>
