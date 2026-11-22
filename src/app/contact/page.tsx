@@ -131,7 +131,7 @@ export default function ContactPage() {
                 transition={{ duration: 0.6 }}
                 className="space-y-6"
               >
-                <div>
+                <div className="text-center">
                   <h2 className="font-display text-2xl font-bold text-foreground sm:text-3xl">
                     Contact Information
                   </h2>

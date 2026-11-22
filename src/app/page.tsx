@@ -43,37 +43,14 @@ export default function Home() {
 
           <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-32 sm:px-6 lg:px-8">
             <div className="flex flex-col items-center text-center">
-              <motion.div
+              <motion.h1
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="mb-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
-              >
-                <div className="relative size-16 overflow-hidden rounded-full ring-4 ring-white/30 sm:size-20">
-                  <img
-                    src="/gain-logo.jpg"
-                    alt="GAIN logo"
-                    className="absolute inset-0 h-full w-full object-cover"
-                  />
-                </div>
-                <div className="text-center sm:text-left">
-                  <h1 className="font-display text-4xl font-extrabold leading-tight text-white sm:text-5xl md:text-6xl">
-                    GAIN
-                  </h1>
-                  <p className="text-sm font-medium text-white/80 sm:text-base">
-                    Green Awareness International
-                  </p>
-                </div>
-              </motion.div>
-
-              <motion.h2
-                initial={{ opacity: 0, y: 24 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.25 }}
-                className="max-w-4xl font-display text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl"
+                transition={{ duration: 0.7, delay: 0.15 }}
+                className="max-w-5xl font-display text-4xl font-bold text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.35)] sm:text-5xl md:text-6xl lg:text-7xl"
               >
                 Leading the front for a sustainable and green Ghana.
-              </motion.h2>
+              </motion.h1>
 
               <motion.p
                 initial={{ opacity: 0, y: 24 }}
@@ -204,7 +181,7 @@ export default function Home() {
                 transition={{ duration: 0.6 }}
                 className="space-y-5"
               >
-                <h2 className="font-display text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
+                <h2 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
                   Turning awareness into lasting action.
                 </h2>
                 <div className="space-y-3">

@@ -60,7 +60,7 @@ export default function AboutPage() {
                 transition={{ duration: 0.6 }}
                 className="space-y-5"
               >
-                <h2 className="font-display text-3xl font-extrabold text-foreground sm:text-4xl">
+                <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl lg:text-5xl">
                   Turning awareness into lasting action.
                 </h2>
                 <div className="space-y-3">

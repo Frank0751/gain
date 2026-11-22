@@ -50,14 +50,11 @@ export default function ProgrammesPage() {
                   </div>
 
                   <div className="space-y-5">
-                    <div>
-                      <p className="text-sm font-semibold uppercase tracking-wider text-primary">
-                        Programme 0{i + 1}
-                      </p>
-                      <h2 className="mt-2 font-display text-3xl font-extrabold text-foreground sm:text-4xl">
+                    <div className="text-center">
+                      <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl lg:text-5xl">
                         {programme.title}
                       </h2>
-                      <p className="mt-2 text-lg font-medium text-accent-foreground">
+                      <p className="mt-3 text-lg font-medium text-accent-foreground">
                         {programme.tagline}
                       </p>
                     </div>
